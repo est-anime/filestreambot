@@ -8,3 +8,5 @@ dnspython
 apscheduler
 requests
 pyshorteners
+pyromod
+psutil
