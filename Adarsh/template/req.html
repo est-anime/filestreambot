@@ -1,4 +1,4 @@
-<!--(c) adarsh-goel-->
+<!--(c) EST ANIME -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,51 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>%s</title>
-    <link rel="stylesheet" type='text/css' href="https://drive----google.com/uc?export=view&id=1pVLG4gZy7jdow3sO-wFS06aP_A9QX0O6">
+    <link rel="stylesheet" type='text/css' href="https://adarsh-goel.github.io/resources/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
-    
-        									 
-<style>
-      marquee{
-      font-size: 30px;
-      font-weight: 800;
-      color: Blue;
-      font-family: sans-serif;
-      }
-    </style>
-    <style>
-      marquee{
-      font-size: 30px;
-      font-weight: 800;
-      color: Blue;
-      font-family: sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css"/>
+
 </head>
 
 <body>
-	
     <header>
-        <marquee bgcolor="#f7f305"
-<div class="toogle"></div>
+        <div class="toogle"></div>
         <div id="file-name">
-            %s
+           <marquee direction = "left"> %s</marquee>
         </div>
-</marquee>
+	     <p align="center">
+      If player don't Work then reload the page or wait a minute.
+  </p>
     </header>
 
     <div class="container">
         <tag src="%s" class="player"></tag>
     </div>
-
+    
     <footer>
-	    <center><h4>Video not playing ? possibly because your browser or the player doesn't support codec please download and watch :D</h4></center><p>
-	    <center><h2> <b>(c)</b> ADARSH GOEL</h2></center>
-	    
+	<h4><a href="https://t.me/estanimes" style="color:blue" >Join telegram channel &emsp; &emsp;</a></h4>
+        <span id="fork-text">Thanks for watching</span>
     </footer>
-    <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
+    
+    
+    <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
 	<script>
         const controls = [
               'play-large',
@@ -77,6 +61,10 @@
         const body = document.querySelector('body');
         const footer = document.querySelector('footer');
         const toogle = document.querySelector('.toogle');
+        toogle.onclick = () => {
+            body.classList.toggle('dark')
+            footer.classList.toggle('dark')
+        }
     </script>
 </body>
 </html>
